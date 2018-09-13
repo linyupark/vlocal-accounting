@@ -1,0 +1,24 @@
+{
+  "name": "vlocal-accounting",
+  "version": "1.0.0",
+  "author": "linyupark@gmail.com",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.2.0",
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.3",
+    "cssnano": "^4.1.0",
+    "stylus": "^0.54.5",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "dependencies": {
+    "dayjs": "^1.7.5",
+    "iview": "^3.1.0",
+    "store": "^2.0.12",
+    "vue": "^2.5.2",
+    "vue-hot-reload-api": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "parcel index.html -d ./dist --no-cache",
+    "build": "parcel build index.html --public-url ./ -d ./build/ --no-cache && node sort-files.js ./build/"
+  }
+}
